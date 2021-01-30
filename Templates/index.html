@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Districts Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- d3 JavaScript -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <!-- Chart.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+
+
+</head>
+
+
+<body>
+  <!-- Grey with black text -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="data">Data</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="json">JSON</a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div id="jumboheader" class="col-md-12 jumbotron text-center">
+        <!-- <button class ="topbutton" onclick="document.location='population'" target="_blank">Total Population by District</button>
+            <button class ="topbutton" onclick="document.location='home'" target="_blank">Home</button>
+            <button class ="topbutton" onclick="document.location='json'" target="_blank">JSON</button> -->
+        <h1 class='big-header'> Healthy Districts</h1> <br>
+        <h5 id='sub-head'> Healthcare outcomes and demographic data by congressional district</h5>
+        <p id='intro'> These visualizations use publicly available data from the <a
+            href="https://www.census.gov/programs-surveys/acs/news/data-releases/2018/release.html#par_textimage_copy"
+            target="_blank">American Community Survey</a>, <br> the <a
+            href="https://www.tfah.org/congressional-districts/" target="_blank">Trust for America's Health</a>,
+          and <a href="https://github.com/unitedstates/congress-legislators" target="_blank">theunitedstates.io</a>.</p>
+        <div id="button-container" <button class="btn btn-secondary float-left" onclick="scatter_load(); bar_load(); scatter_loadw()">
+          Load Data</button>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Chart.js placement -->
+    
+    <canvas id="MyScatter"></canvas>
+
+    <div>
+      <br>
+      <p> These two charts plot Median Income and Race against healthcare outcomes. Generally, with higher levels of 
+        income and higher proportions of the population who identify as white, negative healthcare outcomes such 
+          lack of insurance, smoking, and obesity are less prevalent. 
+      </p>
+      <br>
+    </div>
+    <canvas id="MywScatter"></canvas>
+    
+    <div>
+      <br>
+      <p> The chart below breaks down the amount of people represented by each seat in the House of Representatives. Populations range
+        from just over 500,000 in each of Rhode Island's two districts, to over 1,000,000 in Montana, which has just one at-large representative. </p>
+      <br>
+    </div>
+    <canvas id="MyBar"></canvas>
+    <!-- JS Logic -->
+    <script type="text/javascript" src="../static/js/logic.js"></script>
+    <script type="text/javascript" src="../static/js/scatters.js"></script>
+    <script type="text/javascript" src="../static/js/multiaxis.js"></script>
+    <script type="text/javascript" src="../static/js/bar.js"></script>
+    <!-- <script type="text/javascript" src="../static/js/bubble.js"></script> -->
+    <!-- Bootstrap JS -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
