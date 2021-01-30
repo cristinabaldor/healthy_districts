@@ -18,8 +18,20 @@ import json
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///healthydistricts.db'
-engine = create_engine('sqlite:///healthydistricts.db')
+
+#################################################
+# Database Setup
+#################################################
+
+from flask_sqlalchemy import SQLAlchemy
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///db.sqlite"
+
+# Remove tracking modifications
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+engine = create_engine('sqlite:///db.sqlite')
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 
