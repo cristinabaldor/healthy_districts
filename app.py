@@ -289,7 +289,7 @@ formatters={
 @app.route('/json/')
 def return_json():
 
-    DB = "healthydistricts.db"
+    DB = "db.sqlite"
 
     def get_all_data(json_str=False):
         conn = sqlite3.connect(DB)
