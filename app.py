@@ -321,16 +321,17 @@ def return_table():
 
 @app.route("/home")
 def home():
-    return render_template("../Templates/index.html")
+    return render_template("index.html")
 
 @app.route("/data")
 def data():
-    return render_template("../Templates/data.html")
+    return render_template("data.html")
 
 @app.route("/")
 def landing():
-    return render_template("../Templates/index.html")
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
     app.run(debug=True)
+
