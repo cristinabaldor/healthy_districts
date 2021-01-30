@@ -1,1 +1,1 @@
-web: gunicorn healthy_districts_app:app
+web: gunicorn app:app
