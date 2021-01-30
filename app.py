@@ -311,7 +311,7 @@ def return_json():
 @app.route('/table/')
 def return_table():
 
-    DB = "healthydistricts.db"
+    DB = "db.sqlite"
 
     def get_all_data_table(json_str=False):
         conn = sqlite3.connect(DB)
