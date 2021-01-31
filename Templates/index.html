@@ -12,7 +12,7 @@
   <!-- d3 JavaScript -->
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
   <!-- Chart.JS -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
@@ -82,10 +82,10 @@
     </div>
     <canvas id="MyBar"></canvas>
     <!-- JS Logic -->
-    <script type="text/javascript" src="../static/js/logic.js"></script>
-    <script type="text/javascript" src="../static/js/scatters.js"></script>
-    <script type="text/javascript" src="../static/js/multiaxis.js"></script>
-    <script type="text/javascript" src="../static/js/bar.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/logic.js')}}"></script>   
+    <script type="text/javascript" src="{{ url_for('static', filename='js/scatters.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/multiaxis.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bar.js')}}"></script>
     <!-- <script type="text/javascript" src="../static/js/bubble.js"></script> -->
     <!-- Bootstrap JS -->
 

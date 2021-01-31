@@ -1,5 +1,5 @@
 
-var district_json = "http://127.0.0.1:5000/json/"
+var district_json = "/json/"
 // var district_json = "/json/"
 var dataset_global = {
     GEOID: [],
