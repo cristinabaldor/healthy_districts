@@ -43,12 +43,12 @@ var baseMaps = {
 
 var overlays = {
   "Political Party": party_layer,
-  "Representation Density": repdensity_layer,
-  "Obesity Rates": obesity_layer,
-  "Median Income": income_layer,
-  "Race (White vs. Non-White": race_layer,
-  "Current Smokers": smoking_layer,
-  "Uninsured": uninsured_layer,
+  // "Representation Density": repdensity_layer,
+  // "Obesity Rates": obesity_layer,
+  // "Median Income": income_layer,
+  // "Race (White vs. Non-White": race_layer,
+  // "Current Smokers": smoking_layer,
+  // "Uninsured": uninsured_layer,
 };
 
 L
