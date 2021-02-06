@@ -58,7 +58,7 @@ L
 
 
 // Load in geojson data
-var geoData = "{{ url_for('static', filename='data/healthy_districts.geojson')}}"
+var geoData = "static/data/healthy_districts.geojson"
 
 var geojson;
 
