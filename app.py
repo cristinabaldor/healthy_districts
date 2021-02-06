@@ -332,7 +332,7 @@ def landing():
     return render_template("index.html")
 
 @app.route("/map")
-def landing():
+def maprender():
     return render_template("map.html")
 
 
