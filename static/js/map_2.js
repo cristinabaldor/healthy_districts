@@ -375,7 +375,7 @@ d3.json(geoData, function (data) {
   // // // Adding legend to the map
   // // legend.addTo(income_layer);
 
-
+//note for commit
 
   parseInt
 
