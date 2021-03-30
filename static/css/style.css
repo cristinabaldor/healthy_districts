@@ -46,6 +46,12 @@ body {
   
   .leaflet-popup-content {
     text-align: center;
+    font: 12px Arial, Helvetica, sans-serif;
+  }
+
+  .leaflet-popup-content h3{
+    text-align: center;
+    font: 18px Arial, Helvetica, sans-serif;
   }
   
   /* CSS from the Leaflet-Choropleth documentation */
@@ -86,3 +92,4 @@ body {
     text-align: center;
   }
   
+ 
